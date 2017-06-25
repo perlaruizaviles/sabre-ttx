@@ -70,7 +70,5 @@ end
 
 
 get '/get_profile' do
-
   init.woman_profile_array.to_json
-
 end
