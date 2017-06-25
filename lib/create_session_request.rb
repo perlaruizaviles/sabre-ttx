@@ -11,7 +11,7 @@ module TTx
         end
 
         def send
-            data    = Manager.new.load
+            data    = File.read(File.dirname(__FILE__) + '/../assets/create-session.xml')
             header  = { 'Content-Type' => "text/xml;charset=UTF-8" }
 
             uri          = URI.parse('https://sws3-crt.cert.sabre.com/')

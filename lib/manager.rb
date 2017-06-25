@@ -1,3 +1,4 @@
+require 'nokogiri'
 require_relative 'create_session_request'
 
 module TTx
@@ -13,6 +14,8 @@ module TTx
 
         private 
             def extract_session_token(body)
-            end 
+                doc = Nokogiri::XML( body )
+                doc.xpath("//*[@EncodingType]").text
+            end
     end
 end
