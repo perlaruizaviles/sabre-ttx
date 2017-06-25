@@ -1,5 +1,5 @@
 module TTx
-    class HotelAvailRequest < Request
+    class HotelAvailRequest 
         
     end
 end
