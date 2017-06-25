@@ -1,0 +1,204 @@
+{
+  "attractions": [
+    {
+      "name": "Grand Central Terminal",
+      "rating": "4.5",
+      "distance": ".13 miles away"
+    },
+    {
+      "name": "Chrysler Building",
+      "rating": "4.5",
+      "distance": ".09 miles away"
+    },
+    {
+      "name": "Gotham Bicycle Tours",
+      "rating": "5.0",
+      "distance": ".13 miles away"
+    },
+    {
+      "name": "Grand Central Market",
+      "rating": "4.5",
+      "distance": ".07 miles away"
+    },
+    {
+      "name": "New York City Center Theater",
+      "rating": "4.5",
+      "distance": ".07 miles away"
+    },
+    {
+      "name": "The Art Students League of New York",
+      "rating": "3.0",
+      "distance": ".11 miles away"
+    },
+    {
+      "name": "Carnegie Hall",
+      "rating": "4.5",
+      "distance": ".07 miles away"
+    },
+    {
+      "name": "Eco Central Park Tours",
+      "rating": "5.0",
+      "distance": ".12 miles away"
+    },
+    {
+      "name": "Broadway Theatre",
+      "rating": "4.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "42nd Street",
+      "rating": "4.5",
+      "distance": ".08 miles away"
+    },
+    {
+      "name": "Times Square Church",
+      "rating": "4.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "Circle In The Square Theatre",
+      "rating": "4.5",
+      "distance": ".08 miles away"
+    },
+    {
+      "name": "Bryant Park",
+      "rating": "4.5",
+      "distance": ".14 miles away"
+    },
+    {
+      "name": "Saturday Night Live - The Exhibition",
+      "rating": "4.5",
+      "distance": ".14 miles away"
+    },
+    {
+      "name": "Lord & Taylor",
+      "rating": "4.5",
+      "distance": ".14 miles away"
+    },
+    {
+      "name": "Kinokuniya Book Stores of America",
+      "rating": "4.5",
+      "distance": ".14 miles away"
+    },
+    {
+      "name": "Macy's Herald Square",
+      "rating": "4.0",
+      "distance": ".06 miles away"
+    },
+    {
+      "name": "Macy's Thanksgiving Day Parade",
+      "rating": "4.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "Franklin D. Roosevelt Four Freedoms Park",
+      "rating": "4.5",
+      "distance": ".15 miles away"
+    },
+    {
+      "name": "Herald Square",
+      "rating": "4.0",
+      "distance": ".06 miles away"
+    },
+    {
+      "name": "The Museum of Modern Art (MoMA)",
+      "rating": "4.5",
+      "distance": ".09 miles away"
+    },
+    {
+      "name": "Love Sculpture",
+      "rating": "4.0",
+      "distance": ".05 miles away"
+    },
+    {
+      "name": "New York City Center Theater",
+      "rating": "4.5",
+      "distance": ".11 miles away"
+    },
+    {
+      "name": "CBS Building",
+      "rating": "3.5",
+      "distance": ".12 miles away"
+    },
+    {
+      "name": "Manhattan Skyline",
+      "rating": "5.0",
+      "distance": ".08 miles away"
+    },
+    {
+      "name": "Empire State Building",
+      "rating": "4.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "Sadigh Gallery Ancient Art, Inc",
+      "rating": "2.0",
+      "distance": ".06 miles away"
+    },
+    {
+      "name": "Escape Entertainment",
+      "rating": "5.0",
+      "distance": ".07 miles away"
+    },
+    {
+      "name": "Beacon Theatre",
+      "rating": "4.5",
+      "distance": ".12 miles away"
+    },
+    {
+      "name": "More and More Antiques",
+      "rating": "4.5",
+      "distance": ".07 miles away"
+    },
+    {
+      "name": "Zabar's",
+      "rating": "4.5",
+      "distance": ".18 miles away"
+    },
+    {
+      "name": "Voila Chocolat",
+      "rating": "5.0",
+      "distance": ".12 miles away"
+    },
+    {
+      "name": "Jazz Standard",
+      "rating": "4.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "Modern Pinball NYC",
+      "rating": "4.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "Kalustyan's",
+      "rating": "5.0",
+      "distance": ".14 miles away"
+    },
+    {
+      "name": "People's Improv Theater - The PIT",
+      "rating": "4.5",
+      "distance": ".07 miles away"
+    },
+    {
+      "name": "Mint Theater Company",
+      "rating": "4.5",
+      "distance": ".13 miles away"
+    },
+    {
+      "name": "Stephen A. Schwarzman Building",
+      "rating": "4.5",
+      "distance": ".11 miles away"
+    },
+    {
+      "name": "Kirk Theatre",
+      "rating": "4.0",
+      "distance": ".13 miles away"
+    },
+    {
+      "name": "Broadway Up Close Walking Tours",
+      "rating": "5.0",
+      "distance": ".07 miles away"
+    }
+  ]
+}

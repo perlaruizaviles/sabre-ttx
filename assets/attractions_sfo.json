@@ -1,0 +1,204 @@
+{
+  "attractions": [
+    {
+      "name": "San Francisco Maritime National Historical Park Ships at Hyde Street Pier",
+      "rating": "4.5",
+      "distance": ".05 miles away"
+    },
+    {
+      "name": "Aquatic Park",
+      "rating": "4.5",
+      "distance": ".14 miles away"
+    },
+    {
+      "name": "San Francisco Maritime National Historical Park's Visitor Center",
+      "rating": "4.5",
+      "distance": ".02 miles away"
+    },
+    {
+      "name": "Pepper Palace",
+      "rating": "4.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "Museum of the African Diaspora",
+      "rating": "4.5",
+      "distance": ".12 miles away"
+    },
+    {
+      "name": "Lotta's Fountain",
+      "rating": "4.0",
+      "distance": ".09 miles away"
+    },
+    {
+      "name": "Crocker Galleria",
+      "rating": "3.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "California Historical Society",
+      "rating": "4.0",
+      "distance": ".09 miles away"
+    },
+    {
+      "name": "Market Street",
+      "rating": "3.5",
+      "distance": ".23 miles away"
+    },
+    {
+      "name": "PanIQ Room San Francisco",
+      "rating": "4.5",
+      "distance": ".08 miles away"
+    },
+    {
+      "name": "Great American Music Hall",
+      "rating": "4.0",
+      "distance": ".20 miles away"
+    },
+    {
+      "name": "City Clues Adventures",
+      "rating": "5.0",
+      "distance": ".16 miles away"
+    },
+    {
+      "name": "San Francisco Museum of Modern Art (SFMOMA)",
+      "rating": "4.5",
+      "distance": ".17 miles away"
+    },
+    {
+      "name": "Westfield San Francisco Centre",
+      "rating": "4.0",
+      "distance": ".14 miles away"
+    },
+    {
+      "name": "Yerba Buena Gardens",
+      "rating": "4.0",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "Moscone Center",
+      "rating": "4.0",
+      "distance": ".08 miles away"
+    },
+    {
+      "name": "Cable Car Museum",
+      "rating": "4.5",
+      "distance": ".17 miles away"
+    },
+    {
+      "name": "Grace Cathedral",
+      "rating": "4.5",
+      "distance": ".15 miles away"
+    },
+    {
+      "name": "Market Street Railway",
+      "rating": "4.5",
+      "distance": ".05 miles away"
+    },
+    {
+      "name": "Nob Hill",
+      "rating": "4.5",
+      "distance": ".12 miles away"
+    },
+    {
+      "name": "Saks Fifth Avenue",
+      "rating": "4.0",
+      "distance": ".06 miles away"
+    },
+    {
+      "name": "450 Sutter Building",
+      "rating": "4.5",
+      "distance": ".05 miles away"
+    },
+    {
+      "name": "Teuscher Chocolates of Switzerland",
+      "rating": "5.0",
+      "distance": ".09 miles away"
+    },
+    {
+      "name": "San Francisco History Museum",
+      "rating": "3.5",
+      "distance": ".09 miles away"
+    },
+    {
+      "name": "Market Street Railway",
+      "rating": "4.5",
+      "distance": ".04 miles away"
+    },
+    {
+      "name": "Nob Hill",
+      "rating": "4.5",
+      "distance": ".15 miles away"
+    },
+    {
+      "name": "Huntington Park",
+      "rating": "4.5",
+      "distance": ".16 miles away"
+    },
+    {
+      "name": "Chinese Historical Society of America",
+      "rating": "4.5",
+      "distance": ".15 miles away"
+    },
+    {
+      "name": "Scenic 49 Mile Drive",
+      "rating": "4.5",
+      "distance": ".16 miles away"
+    },
+    {
+      "name": "Glide Memorial United Methodist Church",
+      "rating": "4.5",
+      "distance": ".04 miles away"
+    },
+    {
+      "name": "American Conservatory Theater",
+      "rating": "4.5",
+      "distance": ".10 miles away"
+    },
+    {
+      "name": "SHN Curran Theatre",
+      "rating": "4.0",
+      "distance": ".09 miles away"
+    },
+    {
+      "name": "Transamerica Pyramid",
+      "rating": "4.0",
+      "distance": ".12 miles away"
+    },
+    {
+      "name": "Wells Fargo History Museum",
+      "rating": "4.5",
+      "distance": ".05 miles away"
+    },
+    {
+      "name": "Old Cathedral of St. Mary",
+      "rating": "4.5",
+      "distance": ".15 miles away"
+    },
+    {
+      "name": "Portsmouth Square",
+      "rating": "4.0",
+      "distance": ".16 miles away"
+    },
+    {
+      "name": "Fisherman's Wharf",
+      "rating": "4.0",
+      "distance": ".14 miles away"
+    },
+    {
+      "name": "Madame Tussauds San Francisco",
+      "rating": "4.0",
+      "distance": ".07 miles away"
+    },
+    {
+      "name": "Ripley s Believe It or Not! San Francisco",
+      "rating": "3.5",
+      "distance": ".04 miles away"
+    },
+    {
+      "name": "Eden Fine Art",
+      "rating": "4.5",
+      "distance": ".15 miles away"
+    }
+  ]
+}
