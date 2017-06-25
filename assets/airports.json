@@ -16495,12 +16495,6 @@
       "iata": "NEL"
     },
     {
-      "name": "Nellis Air Force Base",
-      "city": "Las Vegas",
-      "country": "United States",
-      "iata": "LSV"
-    },
-    {
       "name": "March ARB Airport",
       "city": "Riverside",
       "country": "United States",
@@ -18605,12 +18599,6 @@
       "city": "Fort Stockton",
       "country": "United States",
       "iata": "FST"
-    },
-    {
-      "name": "Las Vegas Municipal Airport",
-      "city": "Las Vegas",
-      "country": "United States",
-      "iata": "LVS"
     },
     {
       "name": "West Houston Airport",
@@ -25715,12 +25703,6 @@
       "city": "Lafayette",
       "country": "United States",
       "iata": "LAF"
-    },
-    {
-      "name": "North Las Vegas Airport",
-      "city": "Las Vegas",
-      "country": "United States",
-      "iata": "VGT"
     },
     {
       "name": "Kenosha Regional Airport",
