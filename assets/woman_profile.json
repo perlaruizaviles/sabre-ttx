@@ -1,0 +1,22 @@
+{
+  "preferences": [
+    "FreeWifiInMeetingRoos",
+    "FreeWifiInPublicSpaces",
+    "FreeWifiInRooms",
+    "HighSpeedInternet",
+    "IndoorPool",
+    "OutdoorPool",
+    "Pool",
+    "Breakfast",
+    "InRoomRefrigerator",
+    "NonSmoking",
+    "InRoomCoffeeTea",
+    "FreeShuttle",
+    "RoomService",
+    "FitnessCenter",
+    "Dining",
+    "InRoomSafe",
+    "SmokeFree",
+    "RateAssured"
+  ]
+}

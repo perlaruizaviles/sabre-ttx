@@ -7,6 +7,7 @@ module TTx
 
     attr_accessor :hashCities
     attr_accessor :hotels_array
+    attr_accessor :woman_profile_array
 
     def initialize
 
@@ -15,14 +16,16 @@ module TTx
       @hashCities = Hash.new
       @hashCities = parsed["airports"].map { |airport| [airport['iata'].downcase, build_city(airport)] }.to_h
 
-      @restaurants_nyc = []
-      @restaurants_sfo = []
+      @restaurants_nyc      = []
+      @restaurants_sfo      = []
 
-      @reviews_nyc     = []
-      @reviews_sfo     = []
+      @reviews_nyc          = []
+      @reviews_sfo          = []
 
-      @attractions_nyc = []
-      @attractions_sfo = []
+      @attractions_nyc      = []
+      @attractions_sfo      = []
+
+      @woman_profile_array = []
 
       parsed            = JSON.parse( TTx::Assets.load_file('restaurants_nyc.json') )
       @restaurants_nyc  = parsed["restaurants"].map { |rest| build_restaurant( rest ) }
@@ -41,6 +44,9 @@ module TTx
 
       parsed       = JSON.parse( TTx::Assets.load_file('attractions_sfo.json'))
       @attractions_sfo = parsed["attractions"].each { |attraction| build_attraction(attraction) }
+
+      parsed       = JSON.parse( TTx::Assets.load_file('woman_profile.json'))
+      @woman_profile_array = parsed["preferences"].map { |res| res }
 
       #MOCK
       @doc           = Nokogiri::XML(TTx::Assets.load_file('OTA_HotelAvailLLSRS-Example2_NYC.xml'))
