@@ -62,9 +62,8 @@ get '/get_avail_hotels' do
 
 
     manager = TTx::Manager.new(@@session_token)
-    hotels  = manager.get_hotel_avail(search_command).select do |value|
-        ((hotel_options + room_options ) - (value.hotel_amenities + value.room_amenities)).empty?
-    end
+    hotels  = manager.get_hotel_avail(search_command)
+    
 
     hotels.to_json
 

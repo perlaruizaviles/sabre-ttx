@@ -28,10 +28,21 @@ module TTx
             criteria = hotel_ref_node.parent
 
             @search_command.hotel_options.each do |opt|
-                # node = Nokogiri::XML::Node.new('', @doc)
-                # criteria.add_child()
-            end 
+                puts opt
+                if opt.include?('Room') 
+                    node = Nokogiri::XML::Node.new('RoomAmenity', @doc)
+                elsif
+                    node = Nokogiri::XML::Node.new('HotelAmenity', @doc)
+                end 
+                node.content = opt
+                criteria.add_child(node)
+            end
+
+
+            puts @doc.to_xml
             @doc
+
+
         end 
 
         def element
