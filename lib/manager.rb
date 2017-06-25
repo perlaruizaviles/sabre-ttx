@@ -14,7 +14,7 @@ module TTx
 
         private 
             def extract_session_token(body)
-                doc = Nokogiri::XML( body )
+                doc = Nokogiri::XML(body)
                 doc.xpath("//*[@EncodingType]").text
             end
     end
