@@ -35,7 +35,7 @@ module TTx
                 hotel.image_url = get_image_for(hotel.code, 1)
                 if hotel.image_url.nil?
                     index = rand(1..10)
-                    hotel.image_url = "/#{index}.jpg"
+                    hotel.image_url = "https://raw.githubusercontent.com/Nearsoft/sabre-ttx/master/public/img/#{index}.jpg"
                 end
                 hotel
             end
