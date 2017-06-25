@@ -5,7 +5,7 @@ require 'uri'
 include TTx
 
 data = Manager.new.load
-header = {'Content-Type' => 'Content-Type: "application/soap+xml"; charset=utf-8'}
+header = { 'Content-Type' => "text/xml;charset=UTF-8" }
 
 uri          = URI.parse('https://sws3-crt.cert.sabre.com/')
 http         = Net::HTTP.new(uri.host, uri.port) 
