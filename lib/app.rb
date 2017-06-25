@@ -3,12 +3,12 @@ require 'active_support/all'
 require 'date'
 
 require_relative 'ttx/manager'
-require_relative 'ttx/hotel.rb'
-require_relative 'ttx/city.rb'
-require_relative 'ttx/review.rb'
-require_relative 'ttx/restaurant.rb'
-require_relative 'ttx/attraction.rb'
-require_relative 'ttx/price.rb'
+require_relative 'ttx/hotel'
+require_relative 'ttx/city'
+require_relative 'ttx/review'
+require_relative 'ttx/restaurant'
+require_relative 'ttx/attraction'
+require_relative 'ttx/price'
 require_relative 'ttx/rating'
 require_relative 'ttx/init'
 require_relative 'ttx/search_command'
@@ -16,6 +16,8 @@ require_relative 'ttx/search_command'
 include TTx
 
 init = Init.new
+
+set :public_folder, File.dirname(__FILE__) + './../public/'
 
 before do
     @@session_token ||= TTx::Manager.new.create_session

@@ -8,9 +8,10 @@ module TTx
 
         attr_reader :hotel_code, :size
 
-        def initialize(hotel_code, size = 'THUMBNAIL')
+        def initialize(hotel_code, category = 1, size = 'LARGE')
             @hotel_code = hotel_code
             @size       = size
+            @category   = category
         end 
 
         def build 
@@ -24,8 +25,11 @@ module TTx
             ref                 = Nokogiri::XML::Node.new('HotelRef', @doc)
             ref['HotelCode']    = hotel_code
             ref['CodeContext']  = 'Sabre'
+
             parent.add_child(ref)
 
+            category = @doc.at_xpath('*//*[@CategoryCode]')
+            category['CategoryCode'] = @category
             @doc.to_xml
         end 
 

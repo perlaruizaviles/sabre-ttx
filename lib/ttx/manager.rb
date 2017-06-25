@@ -27,17 +27,23 @@ module TTx
             raw_request = build_avail_request(search_command)
             response    = send(raw_request)
 
-            puts response.body
-
             builder      = HotelBuilderHelper.new       
             doc          = Nokogiri::XML(response.body)
 
-            doc.xpath("//*[@HotelCode]").map {|element| builder.build_hotel(element) }
-            
+            hotels = doc.xpath("//*[@HotelCode]").map  do |element| 
+                hotel = builder.build_hotel(element) 
+                hotel.image_url = get_image_for(hotel.code, 1)
+                if hotel.image_url.nil?
+                    index = rand(1..10)
+                    hotel.image_url = "/#{index}.jpg"
+                end
+                hotel
+            end
+
         end
 
-        def get_image_for(hotel_code)
-            raw_request = build_get_image_request(hotel_code)
+        def get_image_for(hotel_code, category)
+            raw_request = build_get_image_request(hotel_code, category)
             response    = send(raw_request)
 
             doc = Nokogiri::XML::DocumentFragment.parse(response.body)
@@ -56,10 +62,10 @@ module TTx
                 http.post(uri.path, raw_request, header)
             end
 
-            def build_get_image_request(hotel_code)
+            def build_get_image_request(hotel_code, category)
                 validate_security_token!
                 
-                request = GetHotelImageRequest.new(hotel_code)
+                request = GetHotelImageRequest.new(hotel_code, category)
                 doc     = HeaderBuilder.new('GetHotelImageRQ', @security_token).build_header
                 element = Nokogiri::XML::DocumentFragment.parse(request.build)
 

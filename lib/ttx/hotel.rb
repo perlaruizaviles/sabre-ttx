@@ -19,6 +19,7 @@ module TTx
     attr_accessor :rooms
     attr_accessor :reviews
     attr_accessor :rating
+    attr_accessor :image_url
 
 
     def initialize(
@@ -38,7 +39,9 @@ module TTx
         attractions     = [],
         restaurants     = [],
         rooms           = [],
-        reviews         = []
+        reviews         = [],
+        hotel_code      = nil,
+        image_url       = nil
     )
       @code             = code
       @city_code        = city_code
@@ -50,13 +53,14 @@ module TTx
       @fax_number       = fax_number
       @price            = price
       @rating           = rating
-      @special_offers   =special_offers
+      @special_offers   = special_offers
       @hotel_amenities  = hotel_amenities
       @room_amenities   = room_amenities
       @attractions      = attractions
       @restaurants      = restaurants
       @rooms            = rooms
       @reviews          = reviews
+      @image_url        = image_url
 
     end
 

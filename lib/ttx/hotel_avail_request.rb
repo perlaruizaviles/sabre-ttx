@@ -26,6 +26,11 @@ module TTx
             hotel_ref_node['HotelCityCode'] = @search_command.city_code
 
             criteria = hotel_ref_node.parent
+
+            @search_command.hotel_options.each do |opt|
+                # node = Nokogiri::XML::Node.new('', @doc)
+                # criteria.add_child()
+            end 
             @doc
         end 
 
