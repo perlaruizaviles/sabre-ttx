@@ -1,5 +1,6 @@
-module TTx
+require 'net/http'
 
+module TTx
     class CreateSessionRequest
         attr_reader :username, :password, :org, :domain
 

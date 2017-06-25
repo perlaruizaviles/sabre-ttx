@@ -1,10 +1,11 @@
-require 'net/https'
-require 'uri'
-
+require 'sinatra'
 require_relative 'manager'
-require_relative 'create_session_request'
+
+before do
+  @session_token ||= TTx::Manager.new.create_session
+end
 
 
-session_req = TTx::CreateSessionRequest.new('124260', 'APPRED17', 'G7RE', 'AA')
-
-puts TTx::Manager.new.create_session
+get '/perro' do 
+    @session_token
+end 
