@@ -1,5 +1,7 @@
 require 'net/http'
 
+require_relative 'assets'
+
 module TTx
     class CreateSessionRequest
         attr_reader :username, :password, :org, :domain
@@ -12,7 +14,7 @@ module TTx
         end
 
         def send
-            data    = File.read(File.dirname(__FILE__) + '/../../assets/create-session.xml')
+            data    = TTx::Assets.load_file('create-session.xml')
             header  = { 'Content-Type' => "text/xml;charset=UTF-8" }
 
             uri          = URI.parse('https://sws3-crt.cert.sabre.com/')
