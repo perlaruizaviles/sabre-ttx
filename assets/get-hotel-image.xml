@@ -1,0 +1,6 @@
+<GetHotelImageRQ xmlns="http://services.sabre.com/hotel/image/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://services.sabre.com/hotel/image/v1 GetHotelImageRQ.xsd">
+    <HotelRefs>
+        <HotelRef HotelCode="11111" CodeContext="Sabre" />
+    </HotelRefs>
+    <ImageRef Type="LARGE" CategoryCode="1" LanguageCode="EN" />
+</GetHotelImageRQ>

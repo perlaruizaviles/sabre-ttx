@@ -16,7 +16,7 @@ module TTx
         def build_header 
             file = TTx::Assets.load_file('header.xml')
             doc  = Nokogiri::XML::DocumentFragment.parse(file)
-            # puts doc
+
             doc.at_xpath('*//eb:Action', eb: EB_NAMESPACE).child.content                 = @action
             doc.xpath('*//wsse:BinarySecurityToken', wsse: WSSE_NAMESPACE).first.content = @security_token 
 

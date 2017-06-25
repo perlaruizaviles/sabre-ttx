@@ -6,18 +6,19 @@ module TTx
     class CreateSessionRequest
         attr_reader :username, :password, :org, :domain
 
-        def initialize(username, password, org, domain)
-            @username = username
-            @password = password
-            @org      = org     
-            @domain   = domain  
+        def initialize(username, password, org, domain, target_url)
+            @username   = username
+            @password   = password
+            @org        = org     
+            @domain     = domain  
+            @target_url = target_url
         end
 
         def send
             data    = TTx::Assets.load_file('create-session.xml')
             header  = { 'Content-Type' => "text/xml;charset=UTF-8" }
 
-            uri          = URI.parse('https://sws3-crt.cert.sabre.com/')
+            uri          = URI.parse(@target_url)
             http         = Net::HTTP.new(uri.host, uri.port) 
             http.use_ssl = true
 
