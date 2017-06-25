@@ -218,12 +218,18 @@ module TTx
 
     case rating_value
 
-      when 1..3
+      when 0..2
+        result.category = "Not bad"
+      when 2..3
+        result.category = "Regular"
+      when 3..3.5
         result.category = "Good"
-      when 3..4
+      when 3.6..4
         result.category = "Very Good"
-      when 4..5
-        result.category = "Excellent"
+      when 4..4.5
+        result.category = "Fabulous"
+      when 4.5..5
+        result.category = "Superb!!"
     end
 
     result
