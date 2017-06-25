@@ -15,6 +15,8 @@ module TTx
     attr_reader :attractions_sfo
     attr_reader :restaurants_sfo
 
+    attr_reader :woman_profile_array
+
 
 
     def initialize
@@ -34,23 +36,29 @@ module TTx
       @attractions_nyc = []
       @attractions_sfo = []
 
+      @woman_profile_array = []
+
       parsed            = JSON.parse( TTx::Assets.load_file('restaurants_nyc.json') )
       @restaurants_nyc  = parsed["restaurants"].map { |rest| build_restaurant( rest ) }
 
-      parsed       = JSON.parse( TTx::Assets.load_file('restaurants_sfo.json'))
+      parsed           = JSON.parse( TTx::Assets.load_file('restaurants_sfo.json'))
       @restaurants_sfo = parsed["restaurants"].map { |rest| build_restaurant( rest ) }
 
       parsed       = JSON.parse( TTx::Assets.load_file('reviews_nyc.json'))
-      @reviews_nyc     = parsed["reviews"].map { |review| build_review(review) }
+      @reviews_nyc = parsed["reviews"].map { |review| build_review(review) }
 
       parsed       = JSON.parse( TTx::Assets.load_file('reviews_sfo.json'))
       @reviews_sfo = parsed["reviews"].map { |review| build_review(review) }
 
-      parsed       = JSON.parse( TTx::Assets.load_file('attractions_nyc.json'))
+      parsed           = JSON.parse( TTx::Assets.load_file('attractions_nyc.json'))
       @attractions_nyc = parsed["attractions"].each { |attraction| build_attraction(attraction) }
 
-      parsed       = JSON.parse( TTx::Assets.load_file('attractions_sfo.json'))
+      parsed           = JSON.parse( TTx::Assets.load_file('attractions_sfo.json'))
       @attractions_sfo = parsed["attractions"].each { |attraction| build_attraction(attraction) }
+      
+      parsed               = JSON.parse( TTx::Assets.load_file('woman_profile.json'))
+      @woman_profile_array = parsed['preferences'].map { |res| res }
+
 
     end
 
