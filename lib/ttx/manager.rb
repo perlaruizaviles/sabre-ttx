@@ -3,6 +3,8 @@ require_relative 'create_session_request'
 require_relative 'hotel_avail_request'
 require_relative 'get_hotel_image_request'
 require_relative 'header_builder'
+require_relative 'room_codes'
+require_relative 'hotel_builder_helper'
 
 module TTx
     class Manager
@@ -12,20 +14,26 @@ module TTx
         def initialize(security_token = nil, target_url = 'https://sws3-crt.cert.sabre.com/')
             @target_url     = target_url
             @security_token = security_token
+
         end
 
         def create_session
-            session_req = TTx::CreateSessionRequest.new('124260', 'APPRED17', 'G7RE', 'AA', @target_url)
+            session_req = TTx::CreateSessionRequest.new('803792', 'ws347039', 'F9GE', 'AA', @target_url)
             response    = session_req.send
-
             extract_session_token(response.body)
         end         
 
         def get_hotel_avail(search_command) 
             raw_request = build_avail_request(search_command)
             response    = send(raw_request)
-            # TODO: Parse response here 
 
+            puts response.body
+
+            builder      = HotelBuilderHelper.new       
+            doc          = Nokogiri::XML(response.body)
+
+            doc.xpath("//*[@HotelCode]").map {|element| builder.build_hotel(element) }
+            
         end
 
         def get_image_for(hotel_code)
@@ -64,8 +72,9 @@ module TTx
 
                 request = HotelAvailRequest.new(search_command)
                 doc     = HeaderBuilder.new('OTA_HotelAvailLLSRQ', @security_token).build_header
+                element = Nokogiri::XML::DocumentFragment.parse(request.build)
 
-                doc.xpath('*//SOAP-ENV:Body', 'SOAP-ENV': SOAP_NAMESPACE).first.content = request.build
+                doc.at_xpath('*//SOAP-ENV:Body', 'SOAP-ENV': SOAP_NAMESPACE).add_child(request.build)
                 doc.to_xml
             end 
 
@@ -79,5 +88,7 @@ module TTx
                     raise 'no security_token provided'
                 end 
             end
+
+           
     end
 end
