@@ -20,9 +20,9 @@
         </eb:MessageHeader>
         <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
             <wsse:UsernameToken> 
-                <wsse:Username>124260</wsse:Username>
-                <wsse:Password>APPRED17</wsse:Password>
-                <Organization>G7RE</Organization>
+                <wsse:Username>803792</wsse:Username>
+                <wsse:Password>WS347039</wsse:Password>
+                <Organization>F9GE</Organization>
                 <Domain>AA</Domain> 
             </wsse:UsernameToken>
         </wsse:Security>
