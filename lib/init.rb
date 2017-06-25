@@ -6,8 +6,7 @@ module TTx
   class Init
 
     attr_accessor :hashCities
-    attr_accessor :hotels_array_nyc
-    attr_accessor :hotels_array_sfo
+    attr_accessor :hotels_array
 
     def initialize
 
@@ -43,13 +42,9 @@ module TTx
       parsed       = JSON.parse( TTx::Assets.load_file('attractions_sfo.json'))
       @attractions_sfo = parsed["attractions"].each { |attraction| build_attraction(attraction) }
 
-
-      #
-      # @doc              = Nokogiri::XML(File.read("lib/resources/OTA_HotelAvailLLSRS-Example2_NYC.xml"))
-      # @hotels_array_nyc = @doc.xpath("//*[@HotelCode]").map {|d| create_hotel(d , "nyc") }
-      #
-      # @doc              = Nokogiri::XML(File.read("lib/resources/OTA_HotelAvailLLSRS-Example1_SFO.xml"))
-      # @hotels_array_sfo = @doc.xpath("//*[@HotelCode]").map {|d| create_hotel(d , "nyc") }
+      #MOCK
+      @doc           = Nokogiri::XML(TTx::Assets.load_file('OTA_HotelAvailLLSRS-Example2_NYC.xml'))
+      @hotels_array  = @doc.xpath("//*[@HotelCode]").map {|d| create_hotel(d , "nyc") }
 
     end
 

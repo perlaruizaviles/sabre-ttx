@@ -1,0 +1,2641 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header>
+        <eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1">
+            <eb:From>
+                <eb:PartyId eb:type="urn:x12.org:IO5:01">webservices.sabre.com</eb:PartyId>
+            </eb:From>
+            <eb:To>
+                <eb:PartyId eb:type="urn:x12.org:IO5:01">farandula.nearsoft.com</eb:PartyId>
+            </eb:To>
+            <eb:CPAId>Z8B0</eb:CPAId>
+            <eb:ConversationId>1234567801234567890-=</eb:ConversationId>
+            <eb:Service eb:type="sabreXML">OTA_HotelAvailLLSRQ</eb:Service>
+            <eb:Action>OTA_HotelAvailLLSRS</eb:Action>
+            <eb:MessageData>
+                <eb:MessageId>1234567834567890456789</eb:MessageId>
+                <eb:Timestamp>2017-06-19T21:25:32</eb:Timestamp>
+                <eb:RefToMessageId>farandula.nearsoft.com</eb:RefToMessageId>
+            </eb:MessageData>
+        </eb:MessageHeader>
+        <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext">
+            <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTC!ICESMSLB\/CRT.LB!-234567890-!234567890!0!1</wsse:BinarySecurityToken>
+        </wsse:Security>
+    </soap-env:Header>
+    <soap-env:Body>
+        <OTA_HotelAvailRS xmlns="http://webservices.sabre.com/sabreXML/2011/10" xmlns:stl="http://services.sabre.com/STL/v01" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.1.0">
+            <stl:ApplicationResults status="Complete">
+                <stl:Success timeStamp="2017-06-19T16:25:31-05:00">
+                    <stl:SystemSpecificResults>
+                        <stl:HostCommand LNIATA="1C624F">HOTPRPL-0214872,0168807,0046290,0405499,0007240,0063633,0066504,0186468,0024771,0072695,0440706,0057878,0087571,0282676,0446481,0083139,0018482,0019451,0142795,0447429,0058578,0168982,0012015,0011442,0053964,0018369,0070735,0177506,0309026,0431889,0192541,0270909,0288322,0475309,0061117,0177348,0022291,0250899,0049474,0073721,0061063,0012261,0283148,0053729,0307233,0007358,0063827,0452284,0065052,0076469,0000809,0012075,0061371,0073904,0006192,0134157,0042972,0114144,0080435,0079845,0075883,0003934,0081484,0069482,0446047,0311391,0062339,0060795,0246893,0000660,0287004,0060737,0162843,0250469,0140852,0045580,0107190,0210579,0104406,0036023,0122755,0282789,0102863,0020484,0283470,0025015,0009204,0012747,0003635,0063160,0445611,0016421,0065743,0176562,0119467,0447470,0435899,0215638,0046328/¥XPV/30JUL-01AUG2/RP-99</stl:HostCommand>
+                    </stl:SystemSpecificResults>
+                </stl:Success>
+            </stl:ApplicationResults>
+            <AdditionalAvail Ind="false" />
+            <AvailabilityOptions>
+                <AvailabilityOption RPH="001">
+                    <BasicPropertyInfo AreaID="000" ChainCode="HY" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0007240" HotelName="HYATT HOUSE WHITE PLAINS" Latitude="41.019208" Longitude="-73.724299">
+                        <Address>
+                            <AddressLine>101 CORPORATE PARK DR</AddressLine>
+                            <AddressLine>WHITE PLAINS NY 10604</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-914-251-1699" Phone="1-914-251-9700" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>WESTCHESTER MALL</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="true" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="false" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="true" />
+                            <FreeWifiInRooms Ind="true" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="true" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="true" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="true" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="true" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="false" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="299.00" Min="219.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="002">
+                    <BasicPropertyInfo AreaID="000" ChainCode="CI" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0057878" HotelName="COMFORT INN" Latitude="40.755530" Longitude="-73.991660">
+                        <Address>
+                            <AddressLine>305 WEST 39TH STREET</AddressLine>
+                            <AddressLine>NEW YORK NY 10018</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="212-268-3437" Phone="212-268-3040" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NEW YORK</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>2 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="false" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="003">
+                    <BasicPropertyInfo AreaID="000" ChainCode="CY" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0019451" HotelName="COURTYARD NEWARK INTL AIRPORT" Latitude="40.708720" Longitude="-74.174479">
+                        <Address>
+                            <AddressLine>600 ROUTES 1 AND 9 SOUTH</AddressLine>
+                            <AddressLine>NEWARK NJ 07114</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="973-648-0662" Phone="973-643-8500" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NEWARK INTL AIRPORT</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="true" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="true" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="254.00" Min="132.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="004">
+                    <BasicPropertyInfo AreaID="000" ChainCode="LW" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0012015" HotelName="THE PIERRE   A TAJ HOTEL" Latitude="40.765482" Longitude="-73.972010">
+                        <Address>
+                            <AddressLine>2 EAST 61ST ST. AT FIFTH AVE</AddressLine>
+                            <AddressLine>NEW YORK NY 10021</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-212-9408109" Phone="1-212-8388000" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>CENTRAL PARK</Text>
+                        </LocationDescription>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="true" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="true" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="005">
+                    <BasicPropertyInfo AreaID="000" ChainCode="BR" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="HPN" HotelCode="0011442" HotelName="RENAISSANCE WESTCHESTER HOTEL" Latitude="41.015310" Longitude="-73.719030">
+                        <Address>
+                            <AddressLine>80 W RED OAK LANE</AddressLine>
+                            <AddressLine>WEST HARRISON NY 10604</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="914-694-5616" Phone="914-694-5400" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>WEST HARRISON</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>4 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="true" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="true" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="289.00" Min="167.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="006">
+                    <BasicPropertyInfo AreaID="000" ChainCode="DI" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="NYC" HotelCode="0070735" HotelName="DAYS INN LONG ISLAND CITY" Latitude="40.745694" Longitude="-73.934056">
+                        <Address>
+                            <AddressLine>31-36 QUEENS BLVD</AddressLine>
+                            <AddressLine>LONG ISLAND CITY NY 11101</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-718-4330079" Phone="1-718-4330077" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NEW YORK</Text>
+                        </LocationDescription>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="false" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="false" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="false" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="179.00" Min="122.55" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="007">
+                    <BasicPropertyInfo AreaID="000" ChainCode="EA" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0049474" HotelName="ESA MEADOWLANDS-RUTHERFORD" Latitude="40.810849" Longitude="-74.093137">
+                        <Address>
+                            <AddressLine>750 E EDWIN L WARD SR MEMORIAL</AddressLine>
+                            <AddressLine>RUTHERFORD NJ 07070</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="201635-0267" Phone="201635-0266" />
+                        </ContactNumbers>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>EAST RUTHERFORD</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>2 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="false" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="169.99" Min="128.24" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="008">
+                    <BasicPropertyInfo AreaID="000" ChainCode="RZ" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0061063" HotelName="RITZ CARLTON NY CTRL PARK" Latitude="40.765672" Longitude="-73.976217">
+                        <Address>
+                            <AddressLine>50 CENTRAL PARK SOUTH</AddressLine>
+                            <AddressLine>NEW YORK NY 10019</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="212-207-8831" Phone="212-308-9100" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NEW YORK</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>5 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="true" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="3995.00" Min="632.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="009">
+                    <BasicPropertyInfo AreaID="000" ChainCode="CY" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0012261" HotelName="COURTYARD NEWARK ELIZABETH" Latitude="40.662780" Longitude="-74.177380">
+                        <Address>
+                            <AddressLine>87 GLIMCHER REALTY WAY</AddressLine>
+                            <AddressLine>ELIZABETH NJ 07201</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="908-436-9888" Phone="908-436-9800" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>ELIZABETH</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="true" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="true" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="229.00" Min="124.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="010">
+                    <BasicPropertyInfo AreaID="000" ChainCode="SI" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0000809" HotelName="SHERATON MEADOWLANDS CONF CTR" Latitude="40.806870" Longitude="-74.078180">
+                        <Address>
+                            <AddressLine>2 MEADOWLANDS PLAZA</AddressLine>
+                            <AddressLine>EAST RUTHERFORD NJ 07073</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-201-896-9696" Phone="1-201-896-0500" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>ACRS FM  MEADOWLAND</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>4 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="011">
+                    <BasicPropertyInfo AreaID="000" ChainCode="DT" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0012075" HotelName="DOUBLETREE METROPOLITAN HOTEL" Latitude="40.757020" Longitude="-73.971980">
+                        <Address>
+                            <AddressLine>569 LEXINGTON AVE</AddressLine>
+                            <AddressLine>NEW YORK NY 10022</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-212-758-6311" Phone="1-212-752-7000" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>DOWNTOWN  FROM APT</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="true" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="true" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="true" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="true" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="722.52" Min="175.20" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="012">
+                    <BasicPropertyInfo AreaID="000" ChainCode="EA" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0061371" HotelName="ESA ELIZABETH-NEWARK-AIRPORT" Latitude="40.663549" Longitude="-74.175483">
+                        <Address>
+                            <AddressLine>45 GLIMCHER REALTY WAY</AddressLine>
+                            <AddressLine>ELIZABETH NJ 07021</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="908355-5181" Phone="908355-4300" />
+                        </ContactNumbers>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>ELIZABETH</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>2 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="false" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="129.99" Min="103.49" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="013">
+                    <BasicPropertyInfo AreaID="000" ChainCode="WG" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0073904" HotelName="WINGATE BY WY MANHATTAN MIDTWN" Latitude="40.752082" Longitude="-73.991143">
+                        <Address>
+                            <AddressLine>235 WEST 35TH STREET</AddressLine>
+                            <AddressLine>MANHATTAN NY 10001-1901</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-212-9677599" Phone="1-212-9677500" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NEW YORK</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="014">
+                    <BasicPropertyInfo AreaID="000" ChainCode="HI" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0006192" HotelName="HOLIDAY INN FORT LEE" Latitude="40.867335" Longitude="-73.973651">
+                        <Address>
+                            <AddressLine>2339 ROUTE 4 EAST</AddressLine>
+                            <AddressLine>FORT LEE NJ 07024</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-201-944-0623" Phone="1-201-944-5000" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>FORT LEE</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="true" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="true" />
+                            <Pets Ind="false" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="true" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="015">
+                    <BasicPropertyInfo AreaID="000" ChainCode="HI" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0080435" HotelName="HOLIDAY INN EXP STES WOODBRIDG" Latitude="40.575406" Longitude="-74.289129">
+                        <Address>
+                            <AddressLine>874 US HIGHWAY 1</AddressLine>
+                            <AddressLine>AVENEL NJ 07001</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-732-726-0999" Phone="1-732-726-1900" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>WOODBRIDGE NJ</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>2 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="true" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="true" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="016">
+                    <BasicPropertyInfo AreaID="000" ChainCode="HI" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0075883" HotelName="HOLIDAY INN EXP TIMES SQUARE" Latitude="40.755853" Longitude="-73.992412">
+                        <Address>
+                            <AddressLine>343 WEST 39TH STREET</AddressLine>
+                            <AddressLine>NEW YORK CITY NY 10018</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-212-239-1339" Phone="1-212-239-1222" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NEW YORK CITY NY</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>2 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="false" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="017">
+                    <BasicPropertyInfo AreaID="000" ChainCode="XV" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="HPN" HotelCode="0003934" HotelName="SPRINGHILL SUITES TARRYTOWN" Latitude="41.063337" Longitude="-73.843637">
+                        <Address>
+                            <AddressLine>480 WHITE PLAINS ROAD</AddressLine>
+                            <AddressLine>TARRYTOWN NY 10591</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="914-366-4601" Phone="914-366-4600" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>TARRYTOWN</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>2 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="true" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="346.80" Min="124.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="018">
+                    <BasicPropertyInfo AreaID="000" ChainCode="WV" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0069482" HotelName="HOTEL 373 FIFTH AVENUE" Latitude="40.749240" Longitude="-73.983980">
+                        <Address>
+                            <AddressLine>373 FIFTH AVE</AddressLine>
+                            <AddressLine>NEW YORK NY 10016</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-212-3133399" Phone="1-212-2133388" />
+                        </ContactNumbers>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NEW YORK NY</Text>
+                        </LocationDescription>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="false" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="false" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="239.00" Min="135.15" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="019">
+                    <BasicPropertyInfo AreaID="000" ChainCode="OZ" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0062339" HotelName="SUPER 8 N BERGEN NJ NYC AREA" Latitude="40.774250" Longitude="-74.039529">
+                        <Address>
+                            <AddressLine>2800 COLUMBIA AVENUE</AddressLine>
+                            <AddressLine>NORTH BERGEN NJ 07047</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-201-8671490" Phone="1-201-8644500" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NORTH BERGEN NJ</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>1 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="false" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="false" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="133.00" Min="112.10" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="020">
+                    <BasicPropertyInfo AreaID="000" ChainCode="SI" Distance="M" GEO_ConfidenceLevel="6" HotelCityCode="LGA" HotelCode="0000660" HotelName="SHERATON MANHATTAN TIME SQUARE">
+                        <Address>
+                            <AddressLine>790TH 7TH AVE AT 51ST STREET</AddressLine>
+                            <AddressLine>NEW YORK NY 10019</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-212-541-9219" Phone="1-212-581-3300" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>HEART OF BROADWAY</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="true" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="021">
+                    <BasicPropertyInfo AreaID="000" ChainCode="RC" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0060737" HotelName="RESIDENCE INN MARRIOTT W ORANGE" Latitude="40.813300" Longitude="-74.243730">
+                        <Address>
+                            <AddressLine>107 PROSPECT AVENUE</AddressLine>
+                            <AddressLine>WEST ORANGE NJ 07052</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="973-669-0230" Phone="973-669-4700" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>WEST ORANGE</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="389.00" Min="200.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="022">
+                    <BasicPropertyInfo AreaID="000" ChainCode="WI" Distance="M" HotelCityCode="JFK" HotelCode="0162843" HotelName="WESTIN NEW YORK GRAND CENTRAL">
+                        <Address>
+                            <AddressLine>212 EAST 42ND ST</AddressLine>
+                            <AddressLine>NEW YORK NY 10017</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-212-4054299" Phone="1-212-4908900" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="false" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="false" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="false" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="false" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="false" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="false" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="false" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="023">
+                    <BasicPropertyInfo AreaID="000" ChainCode="MC" Distance="M" GEO_ConfidenceLevel="6" HotelCityCode="LGA" HotelCode="0025015" HotelName="MARRIOTT NEW YORK DOWNTOWN">
+                        <Address>
+                            <AddressLine>85 WEST STREET AT ALBANY ST</AddressLine>
+                            <AddressLine>NEW YORK NY 10006</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="212-227-8136" Phone="212-385-4900" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>NEW YORK NY</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="true" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="449.00" Min="140.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="024">
+                    <BasicPropertyInfo AreaID="000" ChainCode="HH" Distance="M" GEO_ConfidenceLevel="3" HotelCityCode="EWR" HotelCode="0009204" HotelName="HILTON NEWARK PENN STATION">
+                        <Address>
+                            <AddressLine>RAYMOND BLVD</AddressLine>
+                            <AddressLine>NEWARK NJ 07102</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-973-622-2644" Phone="1-973-622-5000" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>AIRPORT GATEWAY CNT</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>4 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="true" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="true" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="true" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="true" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="true" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="389.00" Min="179.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="025">
+                    <BasicPropertyInfo AreaID="000" ChainCode="ES" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0012747" HotelName="EMBASSY STES SECAUCUSMEADOWLAN" Latitude="40.788010" Longitude="-74.043610">
+                        <Address>
+                            <AddressLine>455 PLAZA DRIVE</AddressLine>
+                            <AddressLine>SECAUCUS NJ 07094</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-201-864-5391" Phone="1-201-864-7300" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>FROM APT N</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="true" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="true" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="true" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="true" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="false" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="false" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="444.95" Min="229.95" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="true" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="026">
+                    <BasicPropertyInfo AreaID="000" ChainCode="HI" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="DCA" HotelCode="0003635" HotelName="HOLIDAY INN FREDERICKSBURG" Latitude="38.344976" Longitude="-77.498238">
+                        <Address>
+                            <AddressLine>564 WARRENTON RD</AddressLine>
+                            <AddressLine>FREDERICKSBURG VA 22405</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="540-373-6341" Phone="540-371-5550" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>I-95 EXIT 133B</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>3 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="true" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="true" />
+                            <Golf Ind="true" />
+                            <HighSpeedInternet Ind="false" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="true" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="true" />
+                            <Pets Ind="false" />
+                            <Pool Ind="false" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="false" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="true" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="false" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="027">
+                    <BasicPropertyInfo AreaID="000" ChainCode="HH" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="EWR" HotelCode="0016421" HotelName="HILTON PEARL RIVER" Latitude="41.047720" Longitude="-74.003869">
+                        <Address>
+                            <AddressLine>500 VETERANS MEM DR</AddressLine>
+                            <AddressLine>PEARL RIVER NY 10965</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-845-735-9005" Phone="1-845-735-9000" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>SUBURBAN-FROM APT-N</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>4 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="true" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="true" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="true" />
+                            <FreeParking Ind="true" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="true" />
+                            <HighSpeedInternet Ind="true" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="true" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="true" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="false" />
+                            <OutdoorPool Ind="false" />
+                            <Pets Ind="true" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="true" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RateRange CurrencyCode="USD" Max="284.00" Min="199.00" />
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+                <AvailabilityOption RPH="028">
+                    <BasicPropertyInfo AreaID="000" ChainCode="WW" Distance="M" GEO_ConfidenceLevel="1" HotelCityCode="LGA" HotelCode="0046328" HotelName="THE EMPIRE HOTEL" Latitude="40.771453" Longitude="-73.982292">
+                        <Address>
+                            <AddressLine>44 WEST 63RD ST.</AddressLine>
+                            <AddressLine>NEW YORK NY 10023</AddressLine>
+                        </Address>
+                        <ContactNumbers>
+                            <ContactNumber Fax="1-212-2657401" Phone="1-212-2657400" />
+                        </ContactNumbers>
+                        <ContractualRateCodeMatch>XPV</ContractualRateCodeMatch>
+                        <DirectConnect>
+                            <Alt_Avail Ind="false" />
+                            <DC_AvailParticipant Ind="true" />
+                            <DC_SellParticipant Ind="true" />
+                            <RatesExceedMax Ind="false" />
+                            <UnAvail Ind="false" />
+                        </DirectConnect>
+                        <LocationDescription>
+                            <Text>LINCOLN CENTER</Text>
+                        </LocationDescription>
+                        <Property Rating="NTM">
+                            <Text>4 CROWN</Text>
+                        </Property>
+                        <PropertyOptionInfo>
+                            <ADA_Accessible Ind="false" />
+                            <AdultsOnly Ind="false" />
+                            <BeachFront Ind="false" />
+                            <Breakfast Ind="false" />
+                            <BusinessCenter Ind="false" />
+                            <BusinessReady Ind="false" />
+                            <Conventions Ind="false" />
+                            <Dataport Ind="false" />
+                            <Dining Ind="true" />
+                            <DryClean Ind="false" />
+                            <EcoCertified Ind="false" />
+                            <ExecutiveFloors Ind="false" />
+                            <FitnessCenter Ind="true" />
+                            <FreeLocalCalls Ind="false" />
+                            <FreeParking Ind="false" />
+                            <FreeShuttle Ind="false" />
+                            <FreeWifiInMeetingRooms Ind="false" />
+                            <FreeWifiInPublicSpaces Ind="false" />
+                            <FreeWifiInRooms Ind="false" />
+                            <FullServiceSpa Ind="false" />
+                            <GameFacilities Ind="false" />
+                            <Golf Ind="false" />
+                            <HighSpeedInternet Ind="false" />
+                            <HypoallergenicRooms Ind="false" />
+                            <IndoorPool Ind="false" />
+                            <InRoomCoffeeTea Ind="false" />
+                            <InRoomMiniBar Ind="false" />
+                            <InRoomRefrigerator Ind="false" />
+                            <InRoomSafe Ind="false" />
+                            <InteriorDoorways Ind="false" />
+                            <Jacuzzi Ind="false" />
+                            <KidsFacilities Ind="true" />
+                            <KitchenFacilities Ind="false" />
+                            <MealService Ind="false" />
+                            <MeetingFacilities Ind="true" />
+                            <NoAdultTV Ind="false" />
+                            <NonSmoking Ind="true" />
+                            <OutdoorPool Ind="true" />
+                            <Pets Ind="true" />
+                            <Pool Ind="true" />
+                            <PublicTransportationAdjacent Ind="false" />
+                            <RateAssured Ind="true" />
+                            <Recreation Ind="false" />
+                            <RestrictedRoomAccess Ind="false" />
+                            <RoomService Ind="true" />
+                            <RoomService24Hours Ind="false" />
+                            <RoomsWithBalcony Ind="false" />
+                            <SkiInOutProperty Ind="false" />
+                            <SmokeFree Ind="false" />
+                            <SmokingRoomsAvail Ind="false" />
+                            <Tennis Ind="false" />
+                            <WaterPurificationSystem Ind="false" />
+                            <Wheelchair Ind="true" />
+                        </PropertyOptionInfo>
+                        <RoomRate RateLevelCode="RAC">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>RAC</HotelRateCode>
+                        </RoomRate>
+                        <RoomRate RateLevelCode="XPV">
+                            <AdditionalInfo>
+                                <CancelPolicy Numeric="00" />
+                            </AdditionalInfo>
+                            <HotelRateCode>XPV</HotelRateCode>
+                        </RoomRate>
+                        <SpecialOffers Ind="false" />
+                    </BasicPropertyInfo>
+                </AvailabilityOption>
+            </AvailabilityOptions>
+        </OTA_HotelAvailRS>
+    </soap-env:Body>
+</soap-env:Envelope>
