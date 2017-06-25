@@ -1,7 +1,18 @@
+require_relative 'create_session_request'
+
 module TTx
     class Manager
-        def load
-            File.read('./assets/create-session.xml')
+        
+        def create_session
+            session_req = TTx::CreateSessionRequest.new('124260', 'APPRED17', 'G7RE', 'AA')
+            response    = session_req.send
+
+            extract_session_token(response.body)
         end         
+
+
+        private 
+            def extract_session_token(body)
+            end 
     end
 end
