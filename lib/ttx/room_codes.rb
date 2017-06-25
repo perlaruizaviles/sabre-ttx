@@ -5,7 +5,7 @@ module TTx
         attr_reader :room_code_map
 
         def initialize
-            @room_code_map = YAML.load_file(File.dirname(__FILE__) + '/../assets/room-codes.yml')    
+            @room_code_map = YAML.load_file(File.dirname(__FILE__) + '/../../assets/room-codes.yml')    
         end 
 
         def room_code_to_meaning(code)

@@ -1,0 +1,17 @@
+<SOAP-ENV:Header>
+    <eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" SOAP-ENV:mustUnderstand="0">
+        <eb:From>
+            <eb:PartyId eb:type="urn:x12.org:IO5:01">from</eb:PartyId>
+        </eb:From>
+        <eb:To>
+            <eb:PartyId eb:type="urn:x12.org:IO5:01">ws</eb:PartyId>
+        </eb:To>
+        <eb:CPAId>G7RE</eb:CPAId>
+        <eb:ConversationId>ttx</eb:ConversationId>
+        <eb:Service eb:type="sabreXML"></eb:Service>
+        <eb:Action>OTA_HotelAvailLLSRQ</eb:Action>
+    </eb:MessageHeader>
+    <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" SOAP-ENV:mustUnderstand="0">
+        <wsse:BinarySecurityToken>Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/CERTG!ICESMSLB\/CRT.LB!-3261428981940975996!707606!0</wsse:BinarySecurityToken>
+    </wsse:Security>
+</SOAP-ENV:Header>
